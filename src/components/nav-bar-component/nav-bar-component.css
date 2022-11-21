@@ -1,0 +1,33 @@
+
+
+.nav-container {
+    display: flex;
+    height: 50px;
+    padding: 5px;
+
+    background-color: #967E76;
+}
+
+.nav-btn-container {
+    display: block;
+    margin-block: auto;
+    margin-inline: auto 0;
+}
+
+.nav-btn {
+    text-decoration: none;
+    
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-inline: 8px;
+
+    color: hsl(217, 27%, 85%);
+}
+
+.nav-btn:hover {
+    color: hsl(217, 27%, 75%);
+}
+
+.nav-btn-selected {
+    color: #424a57;
+}

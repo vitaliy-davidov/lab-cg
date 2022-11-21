@@ -1,0 +1,19 @@
+.fractals-page {
+    display: flex;
+    height: calc(100% - 60px);
+    width: 100%;
+
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+
+.canvas {
+    background-color: white;
+    border: 5px solid hsl(14, 13%, 53%);
+    border-radius: 5vh;
+    height: min(600px, 70vh);
+    width: min(1200px, 60vw);
+    overflow: hidden;
+}

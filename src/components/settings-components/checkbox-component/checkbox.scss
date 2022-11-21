@@ -1,0 +1,68 @@
+/* Customize the label (the container) */
+.checkbox-group {
+    display: block;
+    position: relative;
+    margin-block: auto;
+
+    font-weight: 700;
+
+    height: 20px;
+    padding-left: 30px;
+
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-group input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 2px solid #767676;
+    border-radius: 5px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkbox-group:hover input ~ .checkmark {
+    background-color: #CED6E3;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+//   .checkbox-group input:checked ~ .checkmark {
+//     background-color: #2196F3;
+//   }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-group input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-group .checkmark:after {
+    left: 6px;
+    top: -5px;
+    width: 5px;
+    height: 15px;
+    border: solid #443A32;
+    border-width: 0 4px 5px 0;
+    transform: rotate(45deg);
+  }

@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MainPage from './components/main-page-component/main-page-component.js'
 import './App.css';
+import NavigationWrapper from './components/navigation-wrapper-component/navigation-wrapper-component.js';
+import FractalsPage from './components/fractals-page-component/fractals-page-component.js';
+import ColorSchemePage from './components/color-scheme-page-component/color-scheme-page-component.js';
+import TransformationPage from './components/transformation-page-component/transformation-page-component.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main-content'>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<MainPage/>} />
+          <Route exact path='/fractals' element={<NavigationWrapper name={'fractals'}><FractalsPage/></NavigationWrapper>} />
+          <Route exact path='/color-scheme' element={<NavigationWrapper name={'color-scheme'}><ColorSchemePage/></NavigationWrapper>} />
+          <Route exact path='/transform' element={<NavigationWrapper name={'transform'}><TransformationPage/></NavigationWrapper>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

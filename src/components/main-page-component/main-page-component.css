@@ -1,0 +1,60 @@
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.help-btn {
+    text-decoration: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10vh;
+
+    display: flex;
+    width: fit-content;
+
+    float: right;
+    align-items: center;
+    text-align: center;
+
+    margin: 1% 3%;
+
+    color: hsl(14, 13%, 53%);
+}
+
+.help-btn:hover {
+    color: hsl(15, 13%, 45%);
+}
+
+.main-logo-wrapper {
+    display: flex;
+    justify-content: center;
+
+    height: 35vh;
+    aspect-ratio: 1;
+}
+
+.main-nav-container {
+    display: flex;
+    margin-inline: auto;
+    margin-block: 10vh;
+}
+
+.main-nav-btn {
+    display: block;
+    height: 15vh;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    margin-inline: 4vw;
+    padding: 10px;
+
+    background-color: hsl(15, 13%, 53%);
+    overflow: hidden;
+}
+
+.main-nav-btn:hover {
+    background-color: hsl(15, 13%, 45%);
+}
